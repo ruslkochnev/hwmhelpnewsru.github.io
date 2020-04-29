@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="shortcut icon" href="https://dcdn.heroeswm.ru/hwmicon.ico">
-<link href="./styles.css" rel="stylesheet" type="text/css">
+<link href="styles.css" rel="stylesheet" type="text/css">
 
 <meta http-equiv="Expires" content="0">
 <meta http-equiv="Pragma" content="no-cache"> 
@@ -9,11 +9,51 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11">
 <meta content="" name="keywords">
 <meta content="" name="description">
-<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
 <title>HWM Форум: "Турнир на выживание!".  HeroesWM.ru - Герои войны и денег. Онлайн игра.</title>
+<script>
+
+  function changeLangToEN() {
+	  var lang_btn = document.getElementById('lang_btn_en');
+	  var lang_btn_text = lang_btn.value;
+	  var div_ru = document.getElementById('ru_block');
+	  var div_en = document.getElementById('en_block');
+	  var btn_ru = document.getElementById('lang_btn_ru');
+	  var btn_en = document.getElementById('lang_btn_en');
+	  div_ru.hidden = true; 
+	  div_en.hidden = false;
+	  btn_ru.hidden = false;
+	  btn_en.hidden = true;
+		  }
+	
+	function changeLangToRU() {
+	   	var lang_btn = document.getElementById('lang_btn_ru');
+	   	var lang_btn_text = lang_btn.value;
+	   	var div_ru = document.getElementById('ru_block');
+	   	var div_en = document.getElementById('en_block');
+		var btn_ru = document.getElementById('lang_btn_ru');
+		var btn_en = document.getElementById('lang_btn_en');
+		div_ru.hidden = false; 
+		div_en.hidden = true;
+		btn_ru.hidden = true;
+		btn_en.hidden = false;
+		  }
+  </script>	
+	
+	
+	
+	
 </head>
 <body class="txt" bgcolor="#ffffff" style="margin: 0;">
 <center>
+	<input type="button" id="lang_btn_en" value="Translate to English" onClick="changeLangToEN()" style="background-color: #488bfa;border: 2px solid #ffffff;color: #ffffff; padding: 12px 26px; border-radius: 10px; font-size: 17px; width: 95%;">
+	<input type="button" id="lang_btn_ru" value="Перевести на русский" onClick="changeLangToRU()" hidden style="background-color: #488bfa;border: 2px solid #ffffff;color: #ffffff; padding: 12px 26px; border-radius: 10px; font-size: 17px; width: 95%;">
+	
+ 
+	
+	<div id="ru_block">
+		
+		
 <table cellpadding="0" border="0" cellspacing="0" width="95%"><tbody><tr><td>
 <table cellpadding="4" width="100%" border="4" align="center" cellspacing="0" class="wb">
 <tbody><tr><td width="70%" class="wblight" align="center" style="font-size: 1em"><b>Последние изменения в игре</b></td>
@@ -43,4 +83,42 @@
 
 
 </tbody></table>
-</td></tr></tbody></table></center></body></html>
+</td></tr></tbody></table>
+</div>	
+	
+		<div id="en_block" hidden="true">
+		
+		
+<table cellpadding="0" border="0" cellspacing="0" width="95%"><tbody><tr><td>
+<table cellpadding="4" width="100%" border="4" align="center" cellspacing="0" class="wb">
+<tbody><tr><td width="70%" class="wblight" align="center" style="font-size: 1em"><b>Recent changes to the game</b></td>
+	</tr>
+<tr>
+<td class="wbwhite" valign="top" width="100%">
+<table border="0" valign="top" width="90%" align="center"><tbody><tr><td style="color: #000000; padding: 5px;font-size: 1em;">Dear Heroes! Today begins the 284th survival tournament with a modified mechanics: <br>
+<br>
+1. The number of opponents entering the arena is limited to 6 waves; <br>
+2. Lightning Tower dismantled from the tournament arena; <br>
+3. The difficulty of opponents is now more balanced for each faction; <br>
+3. A new wave of opponents will enter the battlefield no later than three full moves after the previous wave; <br>
+4. When defeating the 6th wave of opponents, the same number of points multiplied by the remainder of the player’s army in% will be added to the points accumulated. For example, if the Hero scored 1000 points and at the end of the battle half of the army survived, the final result will be: 1000 + 1000 * 0.5 = 1500 points; <br>
+5. <b> For each victorious battle Heroes will receive +0.5 points of the Guild of Hunters, as well as +5 parts of the rare detachment of the Guild of Leaders </b>; <br>
+6. <b> Cancellation fees </b>; <br>
+7. The number of possible fights increased to 9; <br>
+8. The prize fund will depend on the number of participants at each level and fraction; <br>
+9. <b> All participants who score points will be awarded with gold for each fraction separately </b>. <br>
+<br>
+In addition to gold, GO points and parts of GL units, the best of the best will be awarded with achievements: <br>
+<br>
+<center><img src="./news_files/dost0010.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0013.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0016.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0019.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0022.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0025.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0028.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0031.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0034.png" width="50" height="50" alt=""></center><br>
+<br>
+<b>More victories!</b> </td></tr></tbody></table></td>
+</tr>
+
+
+
+</tbody></table>
+</td></tr></tbody></table>
+</div>		
+		
+		</center></body></html>
