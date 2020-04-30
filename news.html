@@ -46,79 +46,67 @@
 </head>
 <body class="txt" bgcolor="#ffffff" style="margin: 0;">
 <center>
-	<input type="button" id="lang_btn_en" value="Translate to English" onClick="changeLangToEN()" style="background-color: #488bfa;border: 2px solid #ffffff;color: #ffffff; padding: 12px 26px; border-radius: 10px; font-size: 17px; width: 95%;">
-	<input type="button" id="lang_btn_ru" value="Перевести на русский" onClick="changeLangToRU()" hidden style="background-color: #488bfa;border: 2px solid #ffffff;color: #ffffff; padding: 12px 26px; border-radius: 10px; font-size: 17px; width: 95%;">
+	<input type="button" id="lang_btn_en" value="Translate to English" onClick="changeLangToEN()" style="background-color: #488bfa;border: 2px solid #ffffff; color: #ffffff; padding: 12px 26px; border-radius: 10px; font-size: 17px; width: 95%; margin-left: 2.5%; margin-right: 2.5%">
+	<input type="button" id="lang_btn_ru" value="Перевести на русский" onClick="changeLangToRU()" hidden style="background-color: #488bfa;border: 2px solid #ffffff; color: #ffffff; padding: 12px 26px; border-radius: 10px; font-size: 17px; width: 95%; margin-left: 2.5%; margin-right: 2.5%">
 	
  
 	
 	<div id="ru_block">
 		
 		
-<table cellpadding="0" border="0" cellspacing="0" width="95%"><tbody><tr><td>
-<table cellpadding="4" width="100%" border="4" align="center" cellspacing="0" class="wb">
-<tbody><tr><td width="70%" class="wblight" align="center" style="font-size: 1em"><b>Последние изменения в игре</b></td>
-	</tr>
-<tr>
-<td class="wbwhite" valign="top" width="100%">
-<table border="0" valign="top" width="90%" align="center"><tbody><tr><td style="color: #000000; padding: 5px;font-size: 1em;">Уважаемые Герои! Сегодня начинается 284-й турнир на выживание с изменённой механикой:<br>
+<div id=main style="width: 95%; margin-left: 2.5%; margin-right: 2.5%"><tbody><tr><td>
+<div id=main-inner cellpadding="4" width="100%" border="4"cellspacing="0" class="wblight" style="text-align: center; font-size: 1.5em"><b>Последние изменения в игре</b></div>
+<div id=main-inner-text border="0" valign="top" class="wblight" width="90%" align="center" style="text-align: left; background-color: #FFFFFF;  font-size: 1.25em; padding-left: 5%"><font color="#000000">
+	<div style="padding-left: 5%"><br>Уважаемые Герои! Сегодня начинается 284-й турнир на выживание с изменённой механикой:</div>
+	<ol>
+<li>Количество выходящих на арену противников ограничено 6-ю волнами;<br>
+<li>С турнирной арены демонтирована Башня Молний;<br>
+<li>Сложность противников теперь более сбалансирована для каждой фракции;<br>
+<li>Новая волна противников выйдет на поле боя не позже трёх полных ходов после выхода предыдущей волны;<br>
+<li>При победе над 6-й волной противников, к набранным очкам будет добавлено еще столько же очков, умноженных на остаток армии игрока в %. Например, если Герой набрал 1000 очков и в конце боя у него выжила половина армии, то финальный результат будет равен: 1000+1000*0.5=1500 очков;<br>
+<li><b>За каждый победный бой Герои будут получать +0.5 очков Гильдии Охотников, а также +5 частей редкого отряда Гильдии Лидеров</b>;<br>
+<li><b>Отменены вступительные взносы</b>;<br>
+<li>Количество возможных боев увеличено до 9;<br>
+<li>Призовой фонд будет зависеть от количества участников на каждом уровне и фракции;<br>
+<li><b>Все набравшие очки участники будут награждены золотом за каждую фракцию отдельно</b>.
+	</ol>
+	<br>
 <br>
-1. Количество выходящих на арену противников ограничено 6-ю волнами;<br>
-2. С турнирной арены демонтирована Башня Молний;<br>
-3. Сложность противников теперь более сбалансирована для каждой фракции;<br>
-3. Новая волна противников выйдет на поле боя не позже трёх полных ходов после выхода предыдущей волны;<br>
-4. При победе над 6-й волной противников, к набранным очкам будет добавлено еще столько же очков, умноженных на остаток армии игрока в %. Например, если Герой набрал 1000 очков и в конце боя у него выжила половина армии, то финальный результат будет равен: 1000+1000*0.5=1500 очков;<br>
-5. <b>За каждый победный бой Герои будут получать +0.5 очков Гильдии Охотников, а также +5 частей редкого отряда Гильдии Лидеров</b>;<br>
-6. <b>Отменены вступительные взносы</b>;<br>
-7. Количество возможных боев увеличено до 9;<br>
-8. Призовой фонд будет зависеть от количества участников на каждом уровне и фракции;<br>
-9. <b>Все набравшие очки участники будут награждены золотом за каждую фракцию отдельно</b>.<br>
-<br>
-Помимо золота, очков ГО и частей отрядов ГЛ, лучшие из лучших будут награждены достижениями:<br>
+<div style="padding-left: 5%">Помимо золота, очков ГО и частей отрядов ГЛ, лучшие из лучших будут награждены достижениями:</div><br>
 <br>
 <center><img src="./news_files/dost0010.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0013.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0016.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0019.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0022.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0025.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0028.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0031.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0034.png" width="50" height="50" alt=""></center><br>
 <br>
-<b>Побольше побед!</b> </td></tr></tbody></table></td>
-</tr>
-
-
-
-</tbody></table>
-</td></tr></tbody></table>
+	<div style="padding-left: 5%"><b>Побольше побед!</b></div></font>
+	</div>
 </div>	
 	
 		<div id="en_block" hidden="true">
 		
-		
-<table cellpadding="0" border="0" cellspacing="0" width="95%"><tbody><tr><td>
-<table cellpadding="4" width="100%" border="4" align="center" cellspacing="0" class="wb">
-<tbody><tr><td width="70%" class="wblight" align="center" style="font-size: 1em"><b>Recent changes to the game</b></td>
-	</tr>
-<tr>
-<td class="wbwhite" valign="top" width="100%">
-<table border="0" valign="top" width="90%" align="center"><tbody><tr><td style="color: #000000; padding: 5px;font-size: 1em;">Dear Heroes! Today begins the 284th survival tournament with a modified mechanics: <br>
+<div id=main style="width: 95%; margin-left: 2.5%; margin-right: 2.5%"><tbody><tr><td>
+<div id=main-inner cellpadding="4" width="100%" border="4"cellspacing="0" class="wblight" style="text-align: center; font-size: 1.5em"><b>Recent changes to the game</b></div>
+<div id=main-inner-text border="0" valign="top" class="wblight" width="90%" align="center" style="text-align: left; background-color: #FFFFFF;  font-size: 1.25em; padding-left: 5%"><font color="#000000">
+	<div style="padding-left: 5%"><br>Dear Heroes! Today begins the 284th survival tournament with a modified mechanics: </div>
+<ol>
+<li> The number of opponents entering the arena is limited to 6 waves; <br>
+<li> Lightning Tower dismantled from the tournament arena; <br>
+<li> Opponents' difficulty is now more balanced for each faction; <br>
+<li> A new wave of opponents will enter the battlefield no later than three full moves after the previous wave; <br>
+<li> If you defeat the 6th wave of opponents, the same number of points multiplied by the remainder of the player’s army in% will be added to the points accumulated. For example, if the Hero scored 1000 points and at the end of the battle half of the army survived, the final result will be: 1000 + 1000 * 0.5 = 1500 points; <br>
+<li> <b> For each victorious battle Heroes will receive +0.5 points of the Guild of Hunters, as well as +5 parts of the rare detachment of the Guild of Leaders </b>; <br>
+<li> <b> Cancellation fees </b>; <br>
+<li> The number of possible fights increased to 9; <br>
+<li> The prize pool will depend on the number of participants at each level and fraction; <br>
+<li> <b> All participants who score points will be awarded with gold for each fraction separately </b>.
+</ol>
 <br>
-1. The number of opponents entering the arena is limited to 6 waves; <br>
-2. Lightning Tower dismantled from the tournament arena; <br>
-3. The difficulty of opponents is now more balanced for each faction; <br>
-3. A new wave of opponents will enter the battlefield no later than three full moves after the previous wave; <br>
-4. When defeating the 6th wave of opponents, the same number of points multiplied by the remainder of the player’s army in% will be added to the points accumulated. For example, if the Hero scored 1000 points and at the end of the battle half of the army survived, the final result will be: 1000 + 1000 * 0.5 = 1500 points; <br>
-5. <b> For each victorious battle Heroes will receive +0.5 points of the Guild of Hunters, as well as +5 parts of the rare detachment of the Guild of Leaders </b>; <br>
-6. <b> Cancellation fees </b>; <br>
-7. The number of possible fights increased to 9; <br>
-8. The prize fund will depend on the number of participants at each level and fraction; <br>
-9. <b> All participants who score points will be awarded with gold for each fraction separately </b>. <br>
 <br>
-In addition to gold, GO points and parts of GL units, the best of the best will be awarded with achievements: <br>
+<div style="padding-left: 5%">In addition to gold, GO points and parts of GL units, the best of the best will be awarded with achievements:</div><br>
 <br>
 <center><img src="./news_files/dost0010.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0013.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0016.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0019.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0022.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0025.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0028.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0031.png" width="50" height="50" alt="">&nbsp;<img src="./news_files/dost0034.png" width="50" height="50" alt=""></center><br>
 <br>
-<b>More victories!</b> </td></tr></tbody></table></td>
-</tr>
-
-
-
-</tbody></table>
-</td></tr></tbody></table>
+	<div style="padding-left: 5%"><b>More victories!</b></div></font>
+	</div>
+</div>	
 </div>		
 		
-		</center></body></html>
+		</body></html>
