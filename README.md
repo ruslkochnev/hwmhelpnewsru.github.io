@@ -1,1 +1,1 @@
-# hwmhelpnewsru.github.io
+./news.html
