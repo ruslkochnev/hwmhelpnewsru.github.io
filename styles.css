@@ -10,6 +10,7 @@ html {
 
 .main-content {
 	margin: 10px;
+	margin-left: 200px;
 }
 
 
@@ -27,6 +28,31 @@ html {
 	width: 95%;
 	margin-left: 2.5%; 
 	margin-right: 2.5%;
+}
+
+.sidenav {
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #ffffff; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10px;
+	margin-left: 5px;
+	border-right: 2px solid #592C08;
+}
+
+.sidenav ul {
+	margin: 0px;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+.sidenav li {
+	padding-left: 0px;
+	margin-bottom: 10px;
+
 }
 
 .text-main {
@@ -53,13 +79,19 @@ html {
 	font-size: 1.1em;
 }
 
+
 .title {
 	font-size: 1.3em;
 }
 
+
 .table {
 	margin-top: 1em;
 	margin-bottom: 1em;
+}
+
+.bordered {
+	border: 1px solid #592C08;
 }
 
 .td {
