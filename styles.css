@@ -15,6 +15,7 @@ html {
 }
 
 
+
 .block-hidder {
 	display: none;
 }
@@ -102,6 +103,29 @@ html {
 
 a {
 	color: #000000;
+}
+
+
+@media (max-device-width: 768px) {
+	.main-content {
+		width: 70%;
+		margin: 5px;
+	}
+	
+	.sidenav {
+		width: 30%;
+	}
+}
+
+@media (max-device-width: 1080px) {
+	.main-content {
+		width: 70%;
+		margin: 5px;
+	}
+	
+	.sidenav {
+		width: 30%;
+	}
 }
 
 
