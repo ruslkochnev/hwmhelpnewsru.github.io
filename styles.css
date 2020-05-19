@@ -11,7 +11,8 @@ html {
 .main-content {
 	width: 85%;
 	margin: 10px;
-	float: right;
+	margin-left: auto;
+	margin-right: 0;
 }
 
 
@@ -24,6 +25,7 @@ html {
 .txt {
 	background-color: #ffffff;
 	font-family: 'verdana', 'geneva', 'arial cyr';
+	width: 100%;
 }
 
 .main {
@@ -55,6 +57,14 @@ html {
 	padding-left: 0px;
 	margin-bottom: 10px;
 
+}
+
+.sidetitle {
+	font-size: 1.1em;
+}
+
+.sidenav a {
+	font-size: 1em;
 }
 
 .text-main {
@@ -109,7 +119,6 @@ a {
 @media (max-device-width: 768px) {
 	.main-content {
 		width: 70%;
-		margin: 5px;
 	}
 	
 	.sidenav {
@@ -120,12 +129,49 @@ a {
 @media (max-device-width: 1080px) {
 	.main-content {
 		width: 70%;
-		margin: 5px;
 	}
 	
 	.sidenav {
 		width: 30%;
 	}
+}
+
+@media (max-device-width: 600px) {
+	.main-content {
+		width: 70%;
+	}
+	
+	.sidenav {
+		width: 30%;
+	}
+	
+	.text-main {
+		padding-left: 0.5%;
+		padding-right: 0.5%;
+	}
+	
+	.text-header {
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.inner-title {
+		font-size: 0.8em;
+	}
+
+
+	.title {
+		font-size: 0.9em;
+	}
+	
+	.sidenav a {
+		font-size: 0.7em;
+
+	}
+	
+	.sidetitle {
+		font-size: 0.8em;
+}
 }
 
 
