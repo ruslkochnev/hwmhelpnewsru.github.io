@@ -11,44 +11,33 @@
 		<meta content="HWM, LWM, Heroes, Lords, War, Money, Heroes of War and Money, Lords of War and Money" name="keywords">
 		<meta content="" name="description">
 		<meta name="viewport" content="width=device-width, user-scalable=yes">
-		<title>HWM Форум: "Подземные пещеры!".  HeroesWM.ru - Герои войны и денег. Онлайн игра.
+		<title>HWM Новости: "Подземные пещеры!".  HeroesWM.ru - Герои войны и денег. Онлайн игра.
 		</title>
 		<script>
 			function changeLangToEN() {
-			  var lang_btn = document.getElementById('lang_btn_en');
-			  var lang_btn_text = lang_btn.value;
-			  var div_ru = document.getElementById('ru_block');
-			  var div_en = document.getElementById('en_block');
-			  var btn_ru = document.getElementById('lang_btn_ru');
-			  var btn_en = document.getElementById('lang_btn_en');
-			  div_ru.hidden = true; 
-			  div_en.hidden = false;
-			  btn_ru.hidden = false;
-			  btn_en.hidden = true;
-			}
-	
-			function changeLangToRU() {
-				var lang_btn = document.getElementById('lang_btn_ru');
-				var lang_btn_text = lang_btn.value;
-				var div_ru = document.getElementById('ru_block');
-				var div_en = document.getElementById('en_block');
-				var btn_ru = document.getElementById('lang_btn_ru');
-				var btn_en = document.getElementById('lang_btn_en');
-				div_ru.hidden = false; 
-				div_en.hidden = true;
-				btn_ru.hidden = true;
-				btn_en.hidden = false;
+			  	let ru_block = document.querySelector('.ru_block');
+				let en_block = document.querySelector('.en_block');
+				let button = document.querySelector('.button');
+				en_block.classList.toggle('block-hidder');
+				ru_block.classList.toggle('block-hidder');
+				if (button.value == 'Translate to English') {
+					button.value = 'Перевести на русский';
+					} 
+				else 
+					if (button.value == 'Перевести на русский') {
+						button.value = 'Translate to English';
+					};
 			}
   		</script>	
 	</head>
 		<body class="txt">
 			<div class="sidenav">
 				<ul>
-					<li>
-						<a class="button-news" href="news.html">
-							Разбойные нападения <br> (19-05-2020)
+					<il>
+						<a href="news.html">
+							Награждение <br> (27-05-2020)
 						</a>
-					</li>
+					</il>
 				</ul>
 				<p>
 					<b class="inner-title">
@@ -56,21 +45,26 @@
 					</b>
 				</p>
 				<ul>
-					<li>
-						<a class="button-news" href="news_undercaves_reward.html">
+					<il>
+						<a href="news_robbery.html">
+						  Разбойные нападения! <br />
+						  (19-05-2020)
+						</a>
+					  </il>
+					<il>
+						<a href="news_undercaves_reward.html">
 							Награждение! <br> (17-05-2020)
 						</a>
-					</li>
+					</il>
 				</ul>
 			</div>
 		<div class="main-content">
 		  <div class="main">
 				<div class="main text-header">
-					<div class="main text-main">
-						<input type="button" id="lang_btn_en" class="button" value="=>Translate to English<=" onClick="changeLangToEN()">
-						<input type="button" id="lang_btn_ru" class="button" value="=>Перевести на русский<=" onClick="changeLangToRU()" hidden>
+						<div class="main text-main">
+							<input type="button" class="button" value="Translate to English" onClick="changeLangToEN()">
+						</div>
 					</div>
-				</div>
 		  </div>
 			<div id="ru_block">
 				<div class="main">
@@ -100,21 +94,21 @@
 							</p>
 							<b class="inner-title">Боевой инструктаж:</b>
 							<ul>
-								<li>к участию в операции допускаются <b>все Герои от 5-го боевого уровня</b>;</li>
-								<li>выбранные навыки не работают;</li>
-								<li>умения и способности фракций не работают;</li>
-								<li>бои возможны только в артефактах из магазина;</li>
-								<li>улучшения на артефактах не работают;</li>
-								<li>начальная армия у всех героев одинакова - 50 лучников и 25 пехотинцев;</li>
-								<li><b>набранная армия не погибает</b>;</li>
-								<li>герои могут присоединять другие отряды к своей армии. При победе к герою присоединяется выживший отряд и до <b>80%</b> погибших в стеке существ;</li>
-								<li>отряды могут быть улучшены за серебро, которое можно добывать в боях (специальное задание);</li>
-								<li>доступен поиск более простых и более сложных противников, количество поисков ограничено до проведения следующего боя. Чем сложнее противник, тем больше серебра он может охранять и тем больший отряд союзников к вам сможет присоединиться;</li>
-								<li>за победу в боях можно получить артефакты существ;</li>
-								<li>по окончании операции <b>Империя наградит золотом всех Героев</b>, одержавших как минимум одну победу;</li>
-								<li>при достижении показателя мощности армии в <b>12,000</b> каждая победа будет дополнительно поощряться <b>очками Гильдии Охотников</b>;</li>
-								<li>при достижении показателя мощности армии в <b>15,000</b> каждая победа будет дополнительно поощряться <b>очками Гильдии Наёмников</b>;</li>
-								<li>при достижении показателя мощности армии в <b>18,000</b> каждая победа будет дополнительно поощряться <b>боевыми зельями</b>, которые можно передавать, продавать на рынке или же использовать, чтобы получить прибавку к параметрам на сутки:</li>
+								<il>к участию в операции допускаются <b>все Герои от 5-го боевого уровня</b>;</il>
+								<il>выбранные навыки не работают;</il>
+								<il>умения и способности фракций не работают;</il>
+								<il>бои возможны только в артефактах из магазина;</il>
+								<il>улучшения на артефактах не работают;</il>
+								<il>начальная армия у всех героев одинакова - 50 лучников и 25 пехотинцев;</il>
+								<il><b>набранная армия не погибает</b>;</il>
+								<il>герои могут присоединять другие отряды к своей армии. При победе к герою присоединяется выживший отряд и до <b>80%</b> погибших в стеке существ;</il>
+								<il>отряды могут быть улучшены за серебро, которое можно добывать в боях (специальное задание);</il>
+								<il>доступен поиск более простых и более сложных противников, количество поисков ограничено до проведения следующего боя. Чем сложнее противник, тем больше серебра он может охранять и тем больший отряд союзников к вам сможет присоединиться;</il>
+								<il>за победу в боях можно получить артефакты существ;</il>
+								<il>по окончании операции <b>Империя наградит золотом всех Героев</b>, одержавших как минимум одну победу;</il>
+								<il>при достижении показателя мощности армии в <b>12,000</b> каждая победа будет дополнительно поощряться <b>очками Гильдии Охотников</b>;</il>
+								<il>при достижении показателя мощности армии в <b>15,000</b> каждая победа будет дополнительно поощряться <b>очками Гильдии Наёмников</b>;</il>
+								<il>при достижении показателя мощности армии в <b>18,000</b> каждая победа будет дополнительно поощряться <b>боевыми зельями</b>, которые можно передавать, продавать на рынке или же использовать, чтобы получить прибавку к параметрам на сутки:</il>
 								<table class="table" align="center" cellspacing="1" cellpadding="1">
 									<tr>
 										<td class="td">
@@ -199,8 +193,8 @@
 										</td>
 									</tr>
 								</table>
-								<li>в день можно одержать <b>до 12 побед</b>, нереализованные <b>победы</b> переносятся на следующий день;</li>
-								<li>спасательная операция продлится <b>всего 8 дней</b> плюс 2 дня на окончание боев, <b>до 16 мая включительно</b>.</li>
+								<il>в день можно одержать <b>до 12 побед</b>, нереализованные <b>победы</b> переносятся на следующий день;</il>
+								<il>спасательная операция продлится <b>всего 8 дней</b> плюс 2 дня на окончание боев, <b>до 16 мая включительно</b>.</il>
 							</ul>
 							<p>
 								Внимание! Воевода напоминает о достаточно высоком уровне опасности в столь мрачных глубинах, а потому даже не надейтесь встретить там отряды трусливых степных гоблинов. Даже если вам показалось, что из-за очередного угла доносятся их мольбы о помощи – не верьте, это всего лишь иллюзия. Лучше сосредоточьтесь на своей цели, ибо личные успехи каждого Героя будут дополнительно поощряться частями
@@ -217,11 +211,11 @@
 								</div>
 							</center>
 							<ul>			
-								<li>за 10 побед: +1 часть;</li>
-								<li>за 20 побед: +3 части;</li>
-								<li>за 30 побед: +4 части;</li>
-								<li>за 40 побед: +5 частей;</li>
-								<li>за 60 побед: +8 частей.</li>
+								<il>за 10 побед: +1 часть;</il>
+								<il>за 20 побед: +3 части;</il>
+								<il>за 30 побед: +4 части;</il>
+								<il>за 40 побед: +5 частей;</il>
+								<il>за 60 побед: +8 частей.</il>
 							</ul>
 							<p>
 								А также до 30 частей по итогам награждения с учётом личного вклада каждого в успех операции.
@@ -268,21 +262,21 @@
 									</p>
 								<b class="inner-title">Combat training:</b>
 								<ul>
-									<li><b> All Heroes from the 5th battle level</b>; </li> are allowed to participate in the operation
-									<li> selected skills do not work; </li>
-									<li> faction skills and abilities do not work; </li>
-									<li> battles are possible only in artifacts from the store; </li>
-									<li> artifact improvements do not work; </li>
-									<li> the initial army is the same for all heroes - 50 archers and 25 infantrymen; </li>
-									<li> <b> the recruited army does not die</b>; </li>
-									<li> heroes can join other units in their army. Upon victory, the surviving detachment joins the hero and up to <b> 80% </b> dead creatures in the stack; </li>
-									<li> units can be upgraded for silver, which can be mined in battles (special task); </li>
-									<li> search for simpler and more complex opponents is available, the number of searches is limited until the next battle. The more difficult the enemy, the more silver he can guard and the larger the detachment of allies will be able to join you; </li>
-									<li> you can get creature artifacts for winning battles; </li>
-									<li> at the end of Operation <b> the Empire will award gold to all Heroes </b> who have won at least one victory; </li>
-									<li> when reaching an army power rating of <b> 12,000 </b> each victory will be further encouraged by <b> Hunter Guild Points</b>; </li>
-									<li> upon reaching an army power rating of <b> 15,000 </b> each victory will be further encouraged by <b> Mercenary Guild Points</b>; </li>
-									<li> upon reaching the army’s power rating of <b> 18,000 </b> each victory will be further encouraged by <b> battle potions</b>, which can be transferred, sold on the market or used to get an increase in the parameters for a day: </li>
+									<il><b> All Heroes from the 5th battle level</b>; </il> are allowed to participate in the operation
+									<il> selected skills do not work; </il>
+									<il> faction skills and abilities do not work; </il>
+									<il> battles are possible only in artifacts from the store; </il>
+									<il> artifact improvements do not work; </il>
+									<il> the initial army is the same for all heroes - 50 archers and 25 infantrymen; </il>
+									<il> <b> the recruited army does not die</b>; </il>
+									<il> heroes can join other units in their army. Upon victory, the surviving detachment joins the hero and up to <b> 80% </b> dead creatures in the stack; </il>
+									<il> units can be upgraded for silver, which can be mined in battles (special task); </il>
+									<il> search for simpler and more complex opponents is available, the number of searches is limited until the next battle. The more difficult the enemy, the more silver he can guard and the larger the detachment of allies will be able to join you; </il>
+									<il> you can get creature artifacts for winning battles; </il>
+									<il> at the end of Operation <b> the Empire will award gold to all Heroes </b> who have won at least one victory; </il>
+									<il> when reaching an army power rating of <b> 12,000 </b> each victory will be further encouraged by <b> Hunter Guild Points</b>; </il>
+									<il> upon reaching an army power rating of <b> 15,000 </b> each victory will be further encouraged by <b> Mercenary Guild Points</b>; </il>
+									<il> upon reaching the army’s power rating of <b> 18,000 </b> each victory will be further encouraged by <b> battle potions</b>, which can be transferred, sold on the market or used to get an increase in the parameters for a day: </il>
 									<table class"table" align="center" cellspacing="1" cellpadding="1">
 										<tr>
 											<td style="background-image: none; padding:2px;">
@@ -367,8 +361,8 @@
 											</td>
 										</tr>
 									</table>
-									<li><b> up to 12 victories </b> can be won per day, unrealized <b> victories </b> are carried over to the next day; </li>
-									<li> the rescue operation will last <b> only 8 days </b> plus 2 days to end the fighting, <b> until May 16 inclusive </b>.</li>
+									<il><b> up to 12 victories </b> can be won per day, unrealized <b> victories </b> are carried over to the next day; </il>
+									<il> the rescue operation will last <b> only 8 days </b> plus 2 days to end the fighting, <b> until May 16 inclusive </b>.</il>
 								</ul>
 								<p>
 									Attention! The voivode recalls a rather high level of danger in such gloomy depths, and therefore do not even hope to meet there squads of cowardly steppe goblins. Even if it seemed to you that because of the next corner their prayers for help are heard - do not believe it, this is just an illusion. It is better to focus on your goal, for the personal success of each Hero will be further encouraged in parts
@@ -385,11 +379,11 @@
 									</div>
 								</center>
 								<ul>			
-									<li> for 10 wins: +1 part; </li>
-									<li> for 20 wins: +3 parts; </li>
-									<li> for 30 wins: +4 parts; </li>
-									<li> for 40 wins: +5 parts; </li>
-									<li> for 60 wins: +8 parts. </li>
+									<il> for 10 wins: +1 part; </il>
+									<il> for 20 wins: +3 parts; </il>
+									<il> for 30 wins: +4 parts; </il>
+									<il> for 40 wins: +5 parts; </il>
+									<il> for 60 wins: +8 parts. </il>
 								</ul>
 								<p>
 									As well as up to 30 parts based on the results of the award, taking into account the personal contribution of each to the success of the operation.
